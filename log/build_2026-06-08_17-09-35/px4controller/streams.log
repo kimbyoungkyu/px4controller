@@ -1,0 +1,37 @@
+[0.012s] Invoking command in '/root/px4controller/src/px4controller/build/px4controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/px4controller/src/px4controller/build/px4controller -- -j32 -l32
+[0.083s] [35m[1mConsolidate compiler generated dependencies of target px4_controller[0m
+[0.102s] [ 33%] [32mBuilding CXX object CMakeFiles/px4_controller.dir/src/px4_proxy.cpp.o[0m
+[2.344s] In file included from [01m[K/root/px4controller/src/px4controller/src/px4_proxy.cpp:1[m[K:
+[2.344s] [01m[K/root/px4controller/src/px4controller/include/px4_proxy.hpp:[m[K In member function ‘[01m[Kvirtual void PX4Proxy::onPX4Updated(uint32_t)[m[K’:
+[2.344s] [01m[K/root/px4controller/src/px4controller/include/px4_proxy.hpp:76:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflags[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.344s]    76 |   virtual void onPX4Updated([01;35m[Kuint32_t flags[m[K) {}
+[2.344s]       |                             [01;35m[K~~~~~~~~~^~~~~[m[K
+[22.360s] [ 66%] [32m[1mLinking CXX executable px4_controller[0m
+[23.704s] [100%] Built target px4_controller
+[23.714s] Invoked command in '/root/px4controller/src/px4controller/build/px4controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/px4controller/src/px4controller/build/px4controller -- -j32 -l32
+[23.721s] Invoking command in '/root/px4controller/src/px4controller/build/px4controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/px4controller/src/px4controller/build/px4controller
+[23.727s] -- Install configuration: ""
+[23.728s] -- Installing: /root/px4controller/src/px4controller/install/px4controller/lib/px4controller/px4_controller
+[23.754s] -- Set runtime path of "/root/px4controller/src/px4controller/install/px4controller/lib/px4controller/px4_controller" to ""
+[23.754s] -- Up-to-date: /root/px4controller/src/px4controller/install/px4controller/include
+[23.755s] -- Up-to-date: /root/px4controller/src/px4controller/install/px4controller/include/px4_controller.hpp
+[23.755s] -- Up-to-date: /root/px4controller/src/px4controller/install/px4controller/include/px4_proxy.hpp
+[23.755s] -- Up-to-date: /root/px4controller/src/px4controller/install/px4controller/share/px4controller/launch
+[23.755s] -- Up-to-date: /root/px4controller/src/px4controller/install/px4controller/share/px4controller/launch/px4controller_launch.py
+[23.755s] -- Up-to-date: /root/px4controller/src/px4controller/install/px4controller/share/ament_index/resource_index/package_run_dependencies/px4controller
+[23.755s] -- Up-to-date: /root/px4controller/src/px4controller/install/px4controller/share/ament_index/resource_index/parent_prefix_path/px4controller
+[23.755s] -- Up-to-date: /root/px4controller/src/px4controller/install/px4controller/share/px4controller/environment/ament_prefix_path.sh
+[23.755s] -- Up-to-date: /root/px4controller/src/px4controller/install/px4controller/share/px4controller/environment/ament_prefix_path.dsv
+[23.755s] -- Up-to-date: /root/px4controller/src/px4controller/install/px4controller/share/px4controller/environment/path.sh
+[23.755s] -- Up-to-date: /root/px4controller/src/px4controller/install/px4controller/share/px4controller/environment/path.dsv
+[23.755s] -- Up-to-date: /root/px4controller/src/px4controller/install/px4controller/share/px4controller/local_setup.bash
+[23.755s] -- Up-to-date: /root/px4controller/src/px4controller/install/px4controller/share/px4controller/local_setup.sh
+[23.755s] -- Up-to-date: /root/px4controller/src/px4controller/install/px4controller/share/px4controller/local_setup.zsh
+[23.755s] -- Up-to-date: /root/px4controller/src/px4controller/install/px4controller/share/px4controller/local_setup.dsv
+[23.755s] -- Installing: /root/px4controller/src/px4controller/install/px4controller/share/px4controller/package.dsv
+[23.756s] -- Up-to-date: /root/px4controller/src/px4controller/install/px4controller/share/ament_index/resource_index/packages/px4controller
+[23.756s] -- Up-to-date: /root/px4controller/src/px4controller/install/px4controller/share/px4controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[23.756s] -- Up-to-date: /root/px4controller/src/px4controller/install/px4controller/share/px4controller/cmake/px4controllerConfig.cmake
+[23.756s] -- Up-to-date: /root/px4controller/src/px4controller/install/px4controller/share/px4controller/cmake/px4controllerConfig-version.cmake
+[23.756s] -- Up-to-date: /root/px4controller/src/px4controller/install/px4controller/share/px4controller/package.xml
+[23.758s] Invoked command in '/root/px4controller/src/px4controller/build/px4controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/px4controller/src/px4controller/build/px4controller

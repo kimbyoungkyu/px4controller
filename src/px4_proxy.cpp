@@ -108,7 +108,7 @@ void PX4Proxy::onVehicleOdometry(const px4_msgs::msg::VehicleOdometry::SharedPtr
     has_odometry_ = true;
   }
 
-  onPX4Updated();
+  onPX4Updated(PX4UpdateFlag::ODOMETRY);
 }
 
 void PX4Proxy::onVehicleStatus(const px4_msgs::msg::VehicleStatus::SharedPtr msg)
@@ -118,8 +118,8 @@ void PX4Proxy::onVehicleStatus(const px4_msgs::msg::VehicleStatus::SharedPtr msg
     latest_status_ = *msg;
     has_status_ = true;
   }
-  //RCLCPP_INFO(get_logger(), "onVehicleStatus");
-  onPX4Updated();
+  RCLCPP_INFO(get_logger(), "onVehicleStatus");
+  onPX4Updated(PX4UpdateFlag::STATUS);
 }
 
 void PX4Proxy::onVehicleControlMode(const px4_msgs::msg::VehicleControlMode::SharedPtr msg)
@@ -130,7 +130,7 @@ void PX4Proxy::onVehicleControlMode(const px4_msgs::msg::VehicleControlMode::Sha
     has_control_mode_ = true;
   }
 
-  onPX4Updated();
+  onPX4Updated(PX4UpdateFlag::CONTROL_MODE);
 }
 
 void PX4Proxy::onFailsafeFlags(const px4_msgs::msg::FailsafeFlags::SharedPtr msg)
@@ -141,7 +141,7 @@ void PX4Proxy::onFailsafeFlags(const px4_msgs::msg::FailsafeFlags::SharedPtr msg
     has_failsafe_flags_ = true;
   }
 
-  onPX4Updated();
+  onPX4Updated(PX4UpdateFlag::FAILSAFE);
 }
 
 void PX4Proxy::onBatteryStatus(const px4_msgs::msg::BatteryStatus::SharedPtr msg)
@@ -152,7 +152,7 @@ void PX4Proxy::onBatteryStatus(const px4_msgs::msg::BatteryStatus::SharedPtr msg
     has_battery_ = true;
   }
 
-  onPX4Updated();
+  onPX4Updated(PX4UpdateFlag::BATTERY);
 }
 
 void PX4Proxy::onVehicleGlobalPosition(const px4_msgs::msg::VehicleGlobalPosition::SharedPtr msg)
@@ -163,7 +163,7 @@ void PX4Proxy::onVehicleGlobalPosition(const px4_msgs::msg::VehicleGlobalPositio
     has_global_position_ = true;
   }
 
-  onPX4Updated();
+  onPX4Updated(PX4UpdateFlag::GLOBAL_POS);
 }
 
 void PX4Proxy::onVehicleLandDetected(const px4_msgs::msg::VehicleLandDetected::SharedPtr msg)
@@ -174,7 +174,7 @@ void PX4Proxy::onVehicleLandDetected(const px4_msgs::msg::VehicleLandDetected::S
     has_land_detected_ = true;
   }
 
-  onPX4Updated();
+  onPX4Updated(PX4UpdateFlag::LAND_DETECTED);
 }
 
 void PX4Proxy::onVehicleCommandAck(const px4_msgs::msg::VehicleCommandAck::SharedPtr msg)
@@ -185,7 +185,7 @@ void PX4Proxy::onVehicleCommandAck(const px4_msgs::msg::VehicleCommandAck::Share
     has_command_ack_ = true;
   }
 
-  onPX4Updated();
+  onPX4Updated(PX4UpdateFlag::COMMAND_ACK);
 }
 
 void PX4Proxy::onEstimatorStatusFlags(const px4_msgs::msg::EstimatorStatusFlags::SharedPtr msg)
@@ -196,7 +196,7 @@ void PX4Proxy::onEstimatorStatusFlags(const px4_msgs::msg::EstimatorStatusFlags:
     has_estimator_flags_ = true;
   }
 
-  onPX4Updated();
+  onPX4Updated(PX4UpdateFlag::ESTIMATOR_FLAGS);
 }
 
 void PX4Proxy::onWind(const px4_msgs::msg::Wind::SharedPtr msg)
@@ -207,7 +207,7 @@ void PX4Proxy::onWind(const px4_msgs::msg::Wind::SharedPtr msg)
     has_wind_ = true;
   }
 
-  onPX4Updated();
+  onPX4Updated(PX4UpdateFlag::WIND);
 }
 
 void PX4Proxy::publishVehicleCommand(
@@ -244,19 +244,13 @@ void PX4Proxy::publishVehicleCommand(
 
 void PX4Proxy::arm()
 {
-  publishVehicleCommand(
-    px4_msgs::msg::VehicleCommand::VEHICLE_CMD_COMPONENT_ARM_DISARM,
-    1.0f);
-
+  publishVehicleCommand(px4_msgs::msg::VehicleCommand::VEHICLE_CMD_COMPONENT_ARM_DISARM,1.0f);
   RCLCPP_INFO(get_logger(), "PX4 ARM command published");
 }
 
 void PX4Proxy::disarm()
 {
-  publishVehicleCommand(
-    px4_msgs::msg::VehicleCommand::VEHICLE_CMD_COMPONENT_ARM_DISARM,
-    0.0f);
-
+  publishVehicleCommand(px4_msgs::msg::VehicleCommand::VEHICLE_CMD_COMPONENT_ARM_DISARM,0.0f);
   RCLCPP_INFO(get_logger(), "PX4 DISARM command published");
 }
 
@@ -277,37 +271,31 @@ void PX4Proxy::takeoff(float altitude_m)
 
 void PX4Proxy::land()
 {
-  publishVehicleCommand(
-    px4_msgs::msg::VehicleCommand::VEHICLE_CMD_NAV_LAND);
-
+  publishVehicleCommand(px4_msgs::msg::VehicleCommand::VEHICLE_CMD_NAV_LAND);
   RCLCPP_INFO(get_logger(), "PX4 LAND command published");
 }
 
 void PX4Proxy::returnToLaunch()
 {
   publishVehicleCommand(px4_msgs::msg::VehicleCommand::VEHICLE_CMD_NAV_RETURN_TO_LAUNCH);
-
   RCLCPP_INFO(get_logger(), "PX4 RTL command published");
 }
 
 void PX4Proxy::publishOffboardControlModePosition()
 {
   px4_msgs::msg::OffboardControlMode msg{};
-
   msg.timestamp = timestamp_us();
   msg.position = true;
   msg.velocity = false;
   msg.acceleration = false;
   msg.attitude = false;
   msg.body_rate = false;
-
   offboard_control_mode_pub_->publish(msg);
 }
 
 void PX4Proxy::publishOffboardControlModeVelocity()
 {
   px4_msgs::msg::OffboardControlMode msg{};
-
   msg.timestamp = timestamp_us();
   msg.position = false;
   msg.velocity = true;

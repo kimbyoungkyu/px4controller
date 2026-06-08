@@ -1,0 +1,38 @@
+[35m[1mConsolidate compiler generated dependencies of target px4_controller[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/px4_controller.dir/src/px4_controller.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/px4_controller.dir/src/px4_proxy.cpp.o[0m
+In file included from [01m[K/root/px4controller/src/px4controller/src/px4_proxy.cpp:1[m[K:
+[01m[K/root/px4controller/src/px4controller/include/px4_proxy.hpp:[m[K In member function ‘[01m[Kvirtual void PX4Proxy::onPX4Updated(uint32_t)[m[K’:
+[01m[K/root/px4controller/src/px4controller/include/px4_proxy.hpp:75:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflags[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   75 |   virtual void onPX4Updated([01;35m[Kuint32_t flags[m[K) {}
+      |                             [01;35m[K~~~~~~~~~^~~~~[m[K
+In file included from [01m[K/root/px4controller/src/px4controller/include/px4_controller.hpp:3[m[K,
+                 from [01m[K/root/px4controller/src/px4controller/src/px4_controller.cpp:1[m[K:
+[01m[K/root/px4controller/src/px4controller/include/px4_proxy.hpp:[m[K In member function ‘[01m[Kvirtual void PX4Proxy::onPX4Updated(uint32_t)[m[K’:
+[01m[K/root/px4controller/src/px4controller/include/px4_proxy.hpp:75:38:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflags[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   75 |   virtual void onPX4Updated([01;35m[Kuint32_t flags[m[K) {}
+      |                             [01;35m[K~~~~~~~~~^~~~~[m[K
+[01m[K/root/px4controller/src/px4controller/src/px4_controller.cpp:[m[K In constructor ‘[01m[KPX4Controller::PX4Controller(const string&, const rclcpp::NodeOptions&)[m[K’:
+[01m[K/root/px4controller/src/px4controller/src/px4_controller.cpp:20:8:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kqos[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+   20 |   auto [01;35m[Kqos[m[K = rclcpp::QoS(rclcpp::QoSInitialization(qos_profile.history, 5), qos_profile);
+      |        [01;35m[K^~~[m[K
+[01m[K/root/px4controller/src/px4controller/src/px4_proxy.cpp:[m[K In member function ‘[01m[Kvoid PX4Proxy::onVehicleStatus(px4_msgs::msg::VehicleStatus_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/root/px4controller/src/px4controller/src/px4_proxy.cpp:122:38:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K)[m[K’ token
+  122 |   onPX4Updated(PX4UpdateFlag::STATUS)[01;31m[K)[m[K;
+      |                                      [01;31m[K^[m[K
+      |                                      [32m[K;[m[K
+[01m[K/root/px4controller/src/px4controller/src/px4_proxy.cpp:[m[K In member function ‘[01m[Kvoid PX4Proxy::onFailsafeFlags(px4_msgs::msg::FailsafeFlags_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/root/px4controller/src/px4controller/src/px4_proxy.cpp:144:31:[m[K [01;31m[Kerror: [m[K‘[01m[KFAILSAFE[m[K’ is not a member of ‘[01m[KPX4Proxy::PX4UpdateFlag[m[K’
+  144 |   onPX4Updated(PX4UpdateFlag::[01;31m[KFAILSAFE[m[K);
+      |                               [01;31m[K^~~~~~~~[m[K
+[01m[K/root/px4controller/src/px4controller/src/px4_proxy.cpp:[m[K In member function ‘[01m[Kvoid PX4Proxy::onVehicleGlobalPosition(px4_msgs::msg::VehicleGlobalPosition_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/root/px4controller/src/px4controller/src/px4_proxy.cpp:166:31:[m[K [01;31m[Kerror: [m[K‘[01m[KGLOBAL_POS[m[K’ is not a member of ‘[01m[KPX4Proxy::PX4UpdateFlag[m[K’
+  166 |   onPX4Updated(PX4UpdateFlag::[01;31m[KGLOBAL_POS[m[K);
+      |                               [01;31m[K^~~~~~~~~~[m[K
+[01m[K/root/px4controller/src/px4controller/src/px4_proxy.cpp:[m[K In member function ‘[01m[Kvoid PX4Proxy::onEstimatorStatusFlags(px4_msgs::msg::EstimatorStatusFlags_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/root/px4controller/src/px4controller/src/px4_proxy.cpp:199:31:[m[K [01;31m[Kerror: [m[K‘[01m[KESTIMATOR_FLAGS[m[K’ is not a member of ‘[01m[KPX4Proxy::PX4UpdateFlag[m[K’
+  199 |   onPX4Updated(PX4UpdateFlag::[01;31m[KESTIMATOR_FLAGS[m[K);
+      |                               [01;31m[K^~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/px4_controller.dir/build.make:90: CMakeFiles/px4_controller.dir/src/px4_proxy.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/px4_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

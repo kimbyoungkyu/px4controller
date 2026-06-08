@@ -1,0 +1,153 @@
+[0.000000] (-) TimerEvent: {}
+[0.000410] (px4controller) JobQueued: {'identifier': 'px4controller', 'dependencies': OrderedDict()}
+[0.000449] (px4controller) JobStarted: {'identifier': 'px4controller'}
+[0.009288] (px4controller) JobProgress: {'identifier': 'px4controller', 'progress': 'cmake'}
+[0.009941] (px4controller) JobProgress: {'identifier': 'px4controller', 'progress': 'build'}
+[0.010351] (px4controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/px4controller/src/px4controller/build/px4controller', '--', '-j32', '-l32'], 'cwd': '/root/px4controller/src/px4controller/build/px4controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('GIT_ASKPASS', '/root/.vscode-server/bin/6a44c352bd24569c417e530095901b649960f9f8/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/root/px4controller/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/root'), ('OLDPWD', '/root/px4controller/src'), ('TERM_PROGRAM_VERSION', '1.123.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-82aab9a5-ff22-40df-a21e-e90b6b1c0cd7.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/6a44c352bd24569c417e530095901b649960f9f8/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/6a44c352bd24569c417e530095901b649960f9f8/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('DEBUGINFOD_URLS', ''), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/root/px4controller/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/594_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/go/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/bin/6a44c352bd24569c417e530095901b649960f9f8/bin/remote-cli:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/usr/local/go/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python314/Scripts/:/mnt/c/Python314/:/mnt/c/Program Files/Zulu/zulu-21/bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/ZED SDK/dependencies/freeglut_2.8/x64:/mnt/c/Program Files (x86)/ZED SDK/dependencies/glew-1.12.0/x64:/mnt/c/Program Files (x86)/ZED SDK/dependencies/opencv_3.1.0/x64:/mnt/c/Program Files (x86)/ZED SDK/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Program Files/WireGuard/:/mnt/c/Program Files/TortoiseSVN/bin:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Users/click/AppData/Local/Programs/Python/Python38/Scripts/:/mnt/c/Users/click/AppData/Local/Programs/Python/Python38/:/mnt/c/Users/click/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/click/AppData/Local/Programs/Microsoft V:/mnt/c/Program Files/dotnet/:/mnt/c/Strawberry/c/bin:/mnt/c/Strawberry/perl/site/bin:/mnt/c/Strawberry/perl/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Go/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Users/click/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/click/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/click/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/click/.cargo/bin:/mnt/c/Users/click/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/click/AppData/Local/Programs/Ollama:/mnt/c/Users/click/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Users/click/go/bin:/mnt/c/Users/click/AppData/Roaming/npm:/mnt/c/Users/click/AppData/Local/Python/bin:/mnt/c/Users/click/.dotnet/tools:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/0/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-0700119650.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/root/px4controller/install/px4controller:/root/px4controller/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/root/px4controller/src/px4controller/build/px4controller'), ('COPILOT_DEBUG_NONCE', '722bbc1600e43517318307b853126dc8'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/root/px4controller/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/root/px4controller/install/px4controller:/root/px4controller/install/px4_msgs:/opt/ros/humble'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:')]), 'shell': False}
+[0.082832] (px4controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target px4_controller\x1b[0m\n'}
+[0.099606] (-) TimerEvent: {}
+[0.100482] (px4controller) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/px4_controller.dir/src/px4_controller.cpp.o\x1b[0m\n'}
+[0.100629] (px4controller) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/px4_controller.dir/src/px4_proxy.cpp.o\x1b[0m\n'}
+[0.199723] (-) TimerEvent: {}
+[0.300041] (-) TimerEvent: {}
+[0.400390] (-) TimerEvent: {}
+[0.500743] (-) TimerEvent: {}
+[0.601179] (-) TimerEvent: {}
+[0.701529] (-) TimerEvent: {}
+[0.801859] (-) TimerEvent: {}
+[0.902182] (-) TimerEvent: {}
+[1.002469] (-) TimerEvent: {}
+[1.102801] (-) TimerEvent: {}
+[1.203249] (-) TimerEvent: {}
+[1.303622] (-) TimerEvent: {}
+[1.403994] (-) TimerEvent: {}
+[1.504352] (-) TimerEvent: {}
+[1.604692] (-) TimerEvent: {}
+[1.705074] (-) TimerEvent: {}
+[1.805411] (-) TimerEvent: {}
+[1.905769] (-) TimerEvent: {}
+[2.006106] (-) TimerEvent: {}
+[2.106423] (-) TimerEvent: {}
+[2.206759] (-) TimerEvent: {}
+[2.307102] (-) TimerEvent: {}
+[2.393445] (px4controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/root/px4controller/src/px4controller/src/px4_proxy.cpp:1\x1b[m\x1b[K:\n'}
+[2.393644] (px4controller) StderrLine: {'line': b'\x1b[01m\x1b[K/root/px4controller/src/px4controller/include/px4_proxy.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void PX4Proxy::onPX4Updated(uint32_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.393720] (px4controller) StderrLine: {'line': b'\x1b[01m\x1b[K/root/px4controller/src/px4controller/include/px4_proxy.hpp:75:38:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflags\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.393756] (px4controller) StderrLine: {'line': b'   75 |   virtual void onPX4Updated(\x1b[01;35m\x1b[Kuint32_t flags\x1b[m\x1b[K) {}\n'}
+[2.393786] (px4controller) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[2.395099] (px4controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/root/px4controller/src/px4controller/include/px4_controller.hpp:3\x1b[m\x1b[K,\n'}
+[2.395222] (px4controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/root/px4controller/src/px4controller/src/px4_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.395287] (px4controller) StderrLine: {'line': b'\x1b[01m\x1b[K/root/px4controller/src/px4controller/include/px4_proxy.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void PX4Proxy::onPX4Updated(uint32_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.395326] (px4controller) StderrLine: {'line': b'\x1b[01m\x1b[K/root/px4controller/src/px4controller/include/px4_proxy.hpp:75:38:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflags\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.395358] (px4controller) StderrLine: {'line': b'   75 |   virtual void onPX4Updated(\x1b[01;35m\x1b[Kuint32_t flags\x1b[m\x1b[K) {}\n'}
+[2.395384] (px4controller) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[2.396739] (px4controller) StderrLine: {'line': b'\x1b[01m\x1b[K/root/px4controller/src/px4controller/src/px4_controller.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KPX4Controller::PX4Controller(const string&, const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.396872] (px4controller) StderrLine: {'line': b'\x1b[01m\x1b[K/root/px4controller/src/px4controller/src/px4_controller.cpp:20:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kqos\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable\x07-Wunused-but-set-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.396911] (px4controller) StderrLine: {'line': b'   20 |   auto \x1b[01;35m\x1b[Kqos\x1b[m\x1b[K = rclcpp::QoS(rclcpp::QoSInitialization(qos_profile.history, 5), qos_profile);\n'}
+[2.396940] (px4controller) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.407168] (-) TimerEvent: {}
+[2.419032] (px4controller) StderrLine: {'line': b'\x1b[01m\x1b[K/root/px4controller/src/px4controller/src/px4_proxy.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PX4Proxy::onVehicleStatus(px4_msgs::msg::VehicleStatus_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.419220] (px4controller) StderrLine: {'line': b'\x1b[01m\x1b[K/root/px4controller/src/px4controller/src/px4_proxy.cpp:122:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.419287] (px4controller) StderrLine: {'line': b'  122 |   onPX4Updated(PX4UpdateFlag::STATUS)\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[2.419324] (px4controller) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.419361] (px4controller) StderrLine: {'line': b'      |                                      \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[2.424663] (px4controller) StderrLine: {'line': b'\x1b[01m\x1b[K/root/px4controller/src/px4controller/src/px4_proxy.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PX4Proxy::onFailsafeFlags(px4_msgs::msg::FailsafeFlags_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.424803] (px4controller) StderrLine: {'line': b'\x1b[01m\x1b[K/root/px4controller/src/px4controller/src/px4_proxy.cpp:144:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KFAILSAFE\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[KPX4Proxy::PX4UpdateFlag\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.424842] (px4controller) StderrLine: {'line': b'  144 |   onPX4Updated(PX4UpdateFlag::\x1b[01;31m\x1b[KFAILSAFE\x1b[m\x1b[K);\n'}
+[2.424873] (px4controller) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.427632] (px4controller) StderrLine: {'line': b'\x1b[01m\x1b[K/root/px4controller/src/px4controller/src/px4_proxy.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PX4Proxy::onVehicleGlobalPosition(px4_msgs::msg::VehicleGlobalPosition_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.427792] (px4controller) StderrLine: {'line': b'\x1b[01m\x1b[K/root/px4controller/src/px4controller/src/px4_proxy.cpp:166:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KGLOBAL_POS\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[KPX4Proxy::PX4UpdateFlag\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.427880] (px4controller) StderrLine: {'line': b'  166 |   onPX4Updated(PX4UpdateFlag::\x1b[01;31m\x1b[KGLOBAL_POS\x1b[m\x1b[K);\n'}
+[2.427916] (px4controller) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.432240] (px4controller) StderrLine: {'line': b'\x1b[01m\x1b[K/root/px4controller/src/px4controller/src/px4_proxy.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PX4Proxy::onEstimatorStatusFlags(px4_msgs::msg::EstimatorStatusFlags_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.432399] (px4controller) StderrLine: {'line': b'\x1b[01m\x1b[K/root/px4controller/src/px4controller/src/px4_proxy.cpp:199:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KESTIMATOR_FLAGS\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[KPX4Proxy::PX4UpdateFlag\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.432442] (px4controller) StderrLine: {'line': b'  199 |   onPX4Updated(PX4UpdateFlag::\x1b[01;31m\x1b[KESTIMATOR_FLAGS\x1b[m\x1b[K);\n'}
+[2.432471] (px4controller) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.507283] (-) TimerEvent: {}
+[2.607621] (-) TimerEvent: {}
+[2.707990] (-) TimerEvent: {}
+[2.808315] (-) TimerEvent: {}
+[2.908618] (-) TimerEvent: {}
+[3.008940] (-) TimerEvent: {}
+[3.109326] (-) TimerEvent: {}
+[3.209745] (-) TimerEvent: {}
+[3.310086] (-) TimerEvent: {}
+[3.410414] (-) TimerEvent: {}
+[3.510737] (-) TimerEvent: {}
+[3.611083] (-) TimerEvent: {}
+[3.711420] (-) TimerEvent: {}
+[3.811716] (-) TimerEvent: {}
+[3.912040] (-) TimerEvent: {}
+[4.012313] (-) TimerEvent: {}
+[4.112635] (-) TimerEvent: {}
+[4.212969] (-) TimerEvent: {}
+[4.313366] (-) TimerEvent: {}
+[4.413719] (-) TimerEvent: {}
+[4.514040] (-) TimerEvent: {}
+[4.614408] (-) TimerEvent: {}
+[4.714765] (-) TimerEvent: {}
+[4.815074] (-) TimerEvent: {}
+[4.915421] (-) TimerEvent: {}
+[5.015778] (-) TimerEvent: {}
+[5.116146] (-) TimerEvent: {}
+[5.216532] (-) TimerEvent: {}
+[5.316936] (-) TimerEvent: {}
+[5.417329] (-) TimerEvent: {}
+[5.517663] (-) TimerEvent: {}
+[5.618039] (-) TimerEvent: {}
+[5.718391] (-) TimerEvent: {}
+[5.818680] (-) TimerEvent: {}
+[5.919007] (-) TimerEvent: {}
+[6.019355] (-) TimerEvent: {}
+[6.119685] (-) TimerEvent: {}
+[6.220057] (-) TimerEvent: {}
+[6.320485] (-) TimerEvent: {}
+[6.420827] (-) TimerEvent: {}
+[6.521183] (-) TimerEvent: {}
+[6.621524] (-) TimerEvent: {}
+[6.721863] (-) TimerEvent: {}
+[6.822162] (-) TimerEvent: {}
+[6.922611] (-) TimerEvent: {}
+[7.022938] (-) TimerEvent: {}
+[7.123220] (-) TimerEvent: {}
+[7.223590] (-) TimerEvent: {}
+[7.323958] (-) TimerEvent: {}
+[7.424347] (-) TimerEvent: {}
+[7.524694] (-) TimerEvent: {}
+[7.625076] (-) TimerEvent: {}
+[7.725446] (-) TimerEvent: {}
+[7.825779] (-) TimerEvent: {}
+[7.926120] (-) TimerEvent: {}
+[8.026468] (-) TimerEvent: {}
+[8.126825] (-) TimerEvent: {}
+[8.227170] (-) TimerEvent: {}
+[8.327566] (-) TimerEvent: {}
+[8.427935] (-) TimerEvent: {}
+[8.528315] (-) TimerEvent: {}
+[8.628706] (-) TimerEvent: {}
+[8.729116] (-) TimerEvent: {}
+[8.829447] (-) TimerEvent: {}
+[8.929806] (-) TimerEvent: {}
+[9.030172] (-) TimerEvent: {}
+[9.130594] (-) TimerEvent: {}
+[9.230920] (-) TimerEvent: {}
+[9.331263] (-) TimerEvent: {}
+[9.431634] (-) TimerEvent: {}
+[9.531959] (-) TimerEvent: {}
+[9.632294] (-) TimerEvent: {}
+[9.732656] (-) TimerEvent: {}
+[9.833003] (-) TimerEvent: {}
+[9.933411] (-) TimerEvent: {}
+[10.033792] (-) TimerEvent: {}
+[10.134202] (-) TimerEvent: {}
+[10.234542] (-) TimerEvent: {}
+[10.334847] (-) TimerEvent: {}
+[10.435162] (-) TimerEvent: {}
+[10.535509] (-) TimerEvent: {}
+[10.635831] (-) TimerEvent: {}
+[10.652874] (px4controller) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/px4_controller.dir/build.make:90: CMakeFiles/px4_controller.dir/src/px4_proxy.cpp.o] Error 1\n'}
+[10.653219] (px4controller) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/px4_controller.dir/all] Error 2\n'}
+[10.653437] (px4controller) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[10.655990] (px4controller) CommandEnded: {'returncode': 2}
+[10.668748] (px4controller) JobEnded: {'identifier': 'px4controller', 'rc': 2}
+[10.679425] (-) EventReactorShutdown: {}

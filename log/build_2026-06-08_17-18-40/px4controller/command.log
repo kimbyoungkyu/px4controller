@@ -1,0 +1,4 @@
+Invoking command in '/root/px4controller/src/px4controller/build/px4controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/px4controller/src/px4controller/build/px4controller -- -j32 -l32
+Invoked command in '/root/px4controller/src/px4controller/build/px4controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/px4controller/src/px4controller/build/px4controller -- -j32 -l32
+Invoking command in '/root/px4controller/src/px4controller/build/px4controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/px4controller/src/px4controller/build/px4controller
+Invoked command in '/root/px4controller/src/px4controller/build/px4controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/px4controller/src/px4controller/build/px4controller

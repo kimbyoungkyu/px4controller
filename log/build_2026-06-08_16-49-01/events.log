@@ -1,0 +1,418 @@
+[0.000000] (-) TimerEvent: {}
+[0.000465] (px4controller) JobQueued: {'identifier': 'px4controller', 'dependencies': OrderedDict()}
+[0.000541] (px4controller) JobStarted: {'identifier': 'px4controller'}
+[0.009528] (px4controller) JobProgress: {'identifier': 'px4controller', 'progress': 'cmake'}
+[0.011494] (px4controller) Command: {'cmd': ['/usr/bin/cmake', '/root/px4controller/src/px4controller', '-DCMAKE_INSTALL_PREFIX=/root/px4controller/src/px4controller/install/px4controller'], 'cwd': '/root/px4controller/src/px4controller/build/px4controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('GIT_ASKPASS', '/root/.vscode-server/bin/6a44c352bd24569c417e530095901b649960f9f8/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/root/px4controller/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/root'), ('OLDPWD', '/root/px4controller/src'), ('TERM_PROGRAM_VERSION', '1.123.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-82aab9a5-ff22-40df-a21e-e90b6b1c0cd7.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/6a44c352bd24569c417e530095901b649960f9f8/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/6a44c352bd24569c417e530095901b649960f9f8/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('DEBUGINFOD_URLS', ''), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/root/px4controller/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/594_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/go/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/bin/6a44c352bd24569c417e530095901b649960f9f8/bin/remote-cli:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/usr/local/go/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python314/Scripts/:/mnt/c/Python314/:/mnt/c/Program Files/Zulu/zulu-21/bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/ZED SDK/dependencies/freeglut_2.8/x64:/mnt/c/Program Files (x86)/ZED SDK/dependencies/glew-1.12.0/x64:/mnt/c/Program Files (x86)/ZED SDK/dependencies/opencv_3.1.0/x64:/mnt/c/Program Files (x86)/ZED SDK/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Program Files/WireGuard/:/mnt/c/Program Files/TortoiseSVN/bin:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Users/click/AppData/Local/Programs/Python/Python38/Scripts/:/mnt/c/Users/click/AppData/Local/Programs/Python/Python38/:/mnt/c/Users/click/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/click/AppData/Local/Programs/Microsoft V:/mnt/c/Program Files/dotnet/:/mnt/c/Strawberry/c/bin:/mnt/c/Strawberry/perl/site/bin:/mnt/c/Strawberry/perl/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Go/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Users/click/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/click/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/click/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/click/.cargo/bin:/mnt/c/Users/click/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/click/AppData/Local/Programs/Ollama:/mnt/c/Users/click/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Users/click/go/bin:/mnt/c/Users/click/AppData/Roaming/npm:/mnt/c/Users/click/AppData/Local/Python/bin:/mnt/c/Users/click/.dotnet/tools:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/0/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-0700119650.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/root/px4controller/install/px4controller:/root/px4controller/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/root/px4controller/src/px4controller/build/px4controller'), ('COPILOT_DEBUG_NONCE', '722bbc1600e43517318307b853126dc8'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/root/px4controller/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/root/px4controller/install/px4controller:/root/px4controller/install/px4_msgs:/opt/ros/humble'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:')]), 'shell': False}
+[0.099421] (-) TimerEvent: {}
+[0.199752] (-) TimerEvent: {}
+[0.253389] (px4controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.299881] (-) TimerEvent: {}
+[0.400268] (-) TimerEvent: {}
+[0.500769] (-) TimerEvent: {}
+[0.601622] (-) TimerEvent: {}
+[0.701972] (-) TimerEvent: {}
+[0.802379] (-) TimerEvent: {}
+[0.891182] (px4controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.902497] (-) TimerEvent: {}
+[1.002834] (-) TimerEvent: {}
+[1.103232] (-) TimerEvent: {}
+[1.203603] (-) TimerEvent: {}
+[1.304034] (-) TimerEvent: {}
+[1.349841] (px4controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.404172] (-) TimerEvent: {}
+[1.504502] (-) TimerEvent: {}
+[1.525869] (px4controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.530648] (px4controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.531110] (px4controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.531576] (px4controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.534497] (px4controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.604607] (-) TimerEvent: {}
+[1.704928] (-) TimerEvent: {}
+[1.707327] (px4controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.711283] (px4controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.711525] (px4controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.711763] (px4controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.721154] (px4controller) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.805000] (-) TimerEvent: {}
+[1.829292] (px4controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.905082] (-) TimerEvent: {}
+[1.908318] (px4controller) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.005174] (-) TimerEvent: {}
+[2.105521] (-) TimerEvent: {}
+[2.117519] (px4controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.122914] (px4controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.133993] (px4controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.148734] (px4controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.166742] (px4controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.205658] (-) TimerEvent: {}
+[2.219040] (px4controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.222938] (px4controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.305803] (-) TimerEvent: {}
+[2.406151] (-) TimerEvent: {}
+[2.506475] (-) TimerEvent: {}
+[2.606813] (-) TimerEvent: {}
+[2.707140] (-) TimerEvent: {}
+[2.807577] (-) TimerEvent: {}
+[2.908431] (-) TimerEvent: {}
+[3.008789] (-) TimerEvent: {}
+[3.109255] (-) TimerEvent: {}
+[3.209815] (-) TimerEvent: {}
+[3.310186] (-) TimerEvent: {}
+[3.410515] (-) TimerEvent: {}
+[3.510840] (-) TimerEvent: {}
+[3.611173] (-) TimerEvent: {}
+[3.711506] (-) TimerEvent: {}
+[3.746007] (px4controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[3.811625] (-) TimerEvent: {}
+[3.911940] (-) TimerEvent: {}
+[4.012316] (-) TimerEvent: {}
+[4.112679] (-) TimerEvent: {}
+[4.213005] (-) TimerEvent: {}
+[4.313355] (-) TimerEvent: {}
+[4.413717] (-) TimerEvent: {}
+[4.514094] (-) TimerEvent: {}
+[4.614880] (-) TimerEvent: {}
+[4.715214] (-) TimerEvent: {}
+[4.815590] (-) TimerEvent: {}
+[4.916025] (-) TimerEvent: {}
+[5.016367] (-) TimerEvent: {}
+[5.116765] (-) TimerEvent: {}
+[5.217155] (-) TimerEvent: {}
+[5.317481] (-) TimerEvent: {}
+[5.389490] (px4controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[5.417568] (-) TimerEvent: {}
+[5.517865] (-) TimerEvent: {}
+[5.618185] (-) TimerEvent: {}
+[5.718513] (-) TimerEvent: {}
+[5.818854] (-) TimerEvent: {}
+[5.919160] (-) TimerEvent: {}
+[6.019493] (-) TimerEvent: {}
+[6.119822] (-) TimerEvent: {}
+[6.220195] (-) TimerEvent: {}
+[6.320538] (-) TimerEvent: {}
+[6.420821] (-) TimerEvent: {}
+[6.521247] (-) TimerEvent: {}
+[6.621581] (-) TimerEvent: {}
+[6.721921] (-) TimerEvent: {}
+[6.822253] (-) TimerEvent: {}
+[6.922577] (-) TimerEvent: {}
+[7.022934] (-) TimerEvent: {}
+[7.123334] (-) TimerEvent: {}
+[7.223684] (-) TimerEvent: {}
+[7.324056] (-) TimerEvent: {}
+[7.424364] (-) TimerEvent: {}
+[7.524750] (-) TimerEvent: {}
+[7.625156] (-) TimerEvent: {}
+[7.725554] (-) TimerEvent: {}
+[7.826051] (-) TimerEvent: {}
+[7.926486] (-) TimerEvent: {}
+[8.027051] (-) TimerEvent: {}
+[8.127429] (-) TimerEvent: {}
+[8.227765] (-) TimerEvent: {}
+[8.328158] (-) TimerEvent: {}
+[8.335854] (px4controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[8.346736] (px4controller) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[8.428271] (-) TimerEvent: {}
+[8.512802] (px4controller) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[8.513214] (px4controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[8.528350] (-) TimerEvent: {}
+[8.628646] (-) TimerEvent: {}
+[8.667448] (px4controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[8.668359] (px4controller) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[8.715225] (px4controller) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[8.728747] (-) TimerEvent: {}
+[8.742180] (px4controller) StdoutLine: {'line': b'-- Found px4_msgs: 2.0.1 (/root/px4controller/install/px4_msgs/share/px4_msgs/cmake)\n'}
+[8.798770] (px4controller) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.811025] (px4controller) StdoutLine: {'line': b'-- Generating done\n'}
+[8.816029] (px4controller) StdoutLine: {'line': b'-- Build files have been written to: /root/px4controller/src/px4controller/build/px4controller\n'}
+[8.827675] (px4controller) CommandEnded: {'returncode': 0}
+[8.829354] (-) TimerEvent: {}
+[8.829937] (px4controller) JobProgress: {'identifier': 'px4controller', 'progress': 'build'}
+[8.829972] (px4controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/px4controller/src/px4controller/build/px4controller', '--', '-j32', '-l32'], 'cwd': '/root/px4controller/src/px4controller/build/px4controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('GIT_ASKPASS', '/root/.vscode-server/bin/6a44c352bd24569c417e530095901b649960f9f8/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/root/px4controller/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/root'), ('OLDPWD', '/root/px4controller/src'), ('TERM_PROGRAM_VERSION', '1.123.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-82aab9a5-ff22-40df-a21e-e90b6b1c0cd7.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/6a44c352bd24569c417e530095901b649960f9f8/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/6a44c352bd24569c417e530095901b649960f9f8/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('DEBUGINFOD_URLS', ''), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/root/px4controller/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/594_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/go/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/bin/6a44c352bd24569c417e530095901b649960f9f8/bin/remote-cli:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/usr/local/go/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python314/Scripts/:/mnt/c/Python314/:/mnt/c/Program Files/Zulu/zulu-21/bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/ZED SDK/dependencies/freeglut_2.8/x64:/mnt/c/Program Files (x86)/ZED SDK/dependencies/glew-1.12.0/x64:/mnt/c/Program Files (x86)/ZED SDK/dependencies/opencv_3.1.0/x64:/mnt/c/Program Files (x86)/ZED SDK/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Program Files/WireGuard/:/mnt/c/Program Files/TortoiseSVN/bin:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Users/click/AppData/Local/Programs/Python/Python38/Scripts/:/mnt/c/Users/click/AppData/Local/Programs/Python/Python38/:/mnt/c/Users/click/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/click/AppData/Local/Programs/Microsoft V:/mnt/c/Program Files/dotnet/:/mnt/c/Strawberry/c/bin:/mnt/c/Strawberry/perl/site/bin:/mnt/c/Strawberry/perl/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Go/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Users/click/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/click/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/click/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/click/.cargo/bin:/mnt/c/Users/click/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/click/AppData/Local/Programs/Ollama:/mnt/c/Users/click/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Users/click/go/bin:/mnt/c/Users/click/AppData/Roaming/npm:/mnt/c/Users/click/AppData/Local/Python/bin:/mnt/c/Users/click/.dotnet/tools:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/0/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-0700119650.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/root/px4controller/install/px4controller:/root/px4controller/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/root/px4controller/src/px4controller/build/px4controller'), ('COPILOT_DEBUG_NONCE', '722bbc1600e43517318307b853126dc8'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/root/px4controller/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/root/px4controller/install/px4controller:/root/px4controller/install/px4_msgs:/opt/ros/humble'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:')]), 'shell': False}
+[8.869594] (px4controller) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/px4_controller.dir/src/px4_controller.cpp.o\x1b[0m\n'}
+[8.869791] (px4controller) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/px4_controller.dir/src/px4_proxy.cpp.o\x1b[0m\n'}
+[8.929468] (-) TimerEvent: {}
+[9.029803] (-) TimerEvent: {}
+[9.130124] (-) TimerEvent: {}
+[9.230459] (-) TimerEvent: {}
+[9.330773] (-) TimerEvent: {}
+[9.431123] (-) TimerEvent: {}
+[9.531430] (-) TimerEvent: {}
+[9.631767] (-) TimerEvent: {}
+[9.732135] (-) TimerEvent: {}
+[9.832512] (-) TimerEvent: {}
+[9.932882] (-) TimerEvent: {}
+[10.033253] (-) TimerEvent: {}
+[10.133554] (-) TimerEvent: {}
+[10.233897] (-) TimerEvent: {}
+[10.334230] (-) TimerEvent: {}
+[10.434571] (-) TimerEvent: {}
+[10.534896] (-) TimerEvent: {}
+[10.635230] (-) TimerEvent: {}
+[10.735583] (-) TimerEvent: {}
+[10.835935] (-) TimerEvent: {}
+[10.936333] (-) TimerEvent: {}
+[11.036680] (-) TimerEvent: {}
+[11.137041] (-) TimerEvent: {}
+[11.237391] (-) TimerEvent: {}
+[11.326271] (px4controller) StderrLine: {'line': b'\x1b[01m\x1b[K/root/px4controller/src/px4controller/src/px4_controller.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KPX4Controller::PX4Controller(const string&, const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.326496] (px4controller) StderrLine: {'line': b'\x1b[01m\x1b[K/root/px4controller/src/px4controller/src/px4_controller.cpp:20:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kqos\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable\x07-Wunused-but-set-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.326578] (px4controller) StderrLine: {'line': b'   20 |   auto \x1b[01;35m\x1b[Kqos\x1b[m\x1b[K = rclcpp::QoS(rclcpp::QoSInitialization(qos_profile.history, 5), qos_profile);\n'}
+[11.326620] (px4controller) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[11.337455] (-) TimerEvent: {}
+[11.437755] (-) TimerEvent: {}
+[11.538092] (-) TimerEvent: {}
+[11.638565] (-) TimerEvent: {}
+[11.739066] (-) TimerEvent: {}
+[11.839386] (-) TimerEvent: {}
+[11.939769] (-) TimerEvent: {}
+[12.040171] (-) TimerEvent: {}
+[12.140534] (-) TimerEvent: {}
+[12.240917] (-) TimerEvent: {}
+[12.341288] (-) TimerEvent: {}
+[12.441655] (-) TimerEvent: {}
+[12.541982] (-) TimerEvent: {}
+[12.642322] (-) TimerEvent: {}
+[12.742655] (-) TimerEvent: {}
+[12.842998] (-) TimerEvent: {}
+[12.943396] (-) TimerEvent: {}
+[13.043727] (-) TimerEvent: {}
+[13.144069] (-) TimerEvent: {}
+[13.244410] (-) TimerEvent: {}
+[13.344810] (-) TimerEvent: {}
+[13.445206] (-) TimerEvent: {}
+[13.545605] (-) TimerEvent: {}
+[13.645938] (-) TimerEvent: {}
+[13.746319] (-) TimerEvent: {}
+[13.846670] (-) TimerEvent: {}
+[13.947052] (-) TimerEvent: {}
+[14.047403] (-) TimerEvent: {}
+[14.147738] (-) TimerEvent: {}
+[14.248134] (-) TimerEvent: {}
+[14.348502] (-) TimerEvent: {}
+[14.448844] (-) TimerEvent: {}
+[14.549199] (-) TimerEvent: {}
+[14.649511] (-) TimerEvent: {}
+[14.749876] (-) TimerEvent: {}
+[14.850217] (-) TimerEvent: {}
+[14.950567] (-) TimerEvent: {}
+[15.051062] (-) TimerEvent: {}
+[15.151620] (-) TimerEvent: {}
+[15.251955] (-) TimerEvent: {}
+[15.352392] (-) TimerEvent: {}
+[15.452802] (-) TimerEvent: {}
+[15.553169] (-) TimerEvent: {}
+[15.653498] (-) TimerEvent: {}
+[15.753831] (-) TimerEvent: {}
+[15.854164] (-) TimerEvent: {}
+[15.954494] (-) TimerEvent: {}
+[16.054833] (-) TimerEvent: {}
+[16.155180] (-) TimerEvent: {}
+[16.255551] (-) TimerEvent: {}
+[16.355888] (-) TimerEvent: {}
+[16.456218] (-) TimerEvent: {}
+[16.556572] (-) TimerEvent: {}
+[16.656919] (-) TimerEvent: {}
+[16.757272] (-) TimerEvent: {}
+[16.857829] (-) TimerEvent: {}
+[16.958144] (-) TimerEvent: {}
+[17.058477] (-) TimerEvent: {}
+[17.158917] (-) TimerEvent: {}
+[17.259266] (-) TimerEvent: {}
+[17.359623] (-) TimerEvent: {}
+[17.460069] (-) TimerEvent: {}
+[17.560421] (-) TimerEvent: {}
+[17.660774] (-) TimerEvent: {}
+[17.761160] (-) TimerEvent: {}
+[17.861510] (-) TimerEvent: {}
+[17.961854] (-) TimerEvent: {}
+[18.062193] (-) TimerEvent: {}
+[18.162622] (-) TimerEvent: {}
+[18.263295] (-) TimerEvent: {}
+[18.363649] (-) TimerEvent: {}
+[18.464224] (-) TimerEvent: {}
+[18.564868] (-) TimerEvent: {}
+[18.665200] (-) TimerEvent: {}
+[18.765540] (-) TimerEvent: {}
+[18.865874] (-) TimerEvent: {}
+[18.966206] (-) TimerEvent: {}
+[19.066557] (-) TimerEvent: {}
+[19.166926] (-) TimerEvent: {}
+[19.267312] (-) TimerEvent: {}
+[19.367715] (-) TimerEvent: {}
+[19.468067] (-) TimerEvent: {}
+[19.568509] (-) TimerEvent: {}
+[19.669087] (-) TimerEvent: {}
+[19.769385] (-) TimerEvent: {}
+[19.869837] (-) TimerEvent: {}
+[19.970390] (-) TimerEvent: {}
+[20.070715] (-) TimerEvent: {}
+[20.171041] (-) TimerEvent: {}
+[20.271383] (-) TimerEvent: {}
+[20.371673] (-) TimerEvent: {}
+[20.472046] (-) TimerEvent: {}
+[20.572408] (-) TimerEvent: {}
+[20.672770] (-) TimerEvent: {}
+[20.773074] (-) TimerEvent: {}
+[20.873420] (-) TimerEvent: {}
+[20.973800] (-) TimerEvent: {}
+[21.074149] (-) TimerEvent: {}
+[21.174496] (-) TimerEvent: {}
+[21.274998] (-) TimerEvent: {}
+[21.375773] (-) TimerEvent: {}
+[21.476241] (-) TimerEvent: {}
+[21.576651] (-) TimerEvent: {}
+[21.677016] (-) TimerEvent: {}
+[21.777369] (-) TimerEvent: {}
+[21.877730] (-) TimerEvent: {}
+[21.978093] (-) TimerEvent: {}
+[22.078451] (-) TimerEvent: {}
+[22.178808] (-) TimerEvent: {}
+[22.279137] (-) TimerEvent: {}
+[22.379523] (-) TimerEvent: {}
+[22.480188] (-) TimerEvent: {}
+[22.580559] (-) TimerEvent: {}
+[22.680943] (-) TimerEvent: {}
+[22.781323] (-) TimerEvent: {}
+[22.881657] (-) TimerEvent: {}
+[22.981978] (-) TimerEvent: {}
+[23.082352] (-) TimerEvent: {}
+[23.182664] (-) TimerEvent: {}
+[23.282997] (-) TimerEvent: {}
+[23.383304] (-) TimerEvent: {}
+[23.483612] (-) TimerEvent: {}
+[23.583943] (-) TimerEvent: {}
+[23.684300] (-) TimerEvent: {}
+[23.784634] (-) TimerEvent: {}
+[23.884972] (-) TimerEvent: {}
+[23.985304] (-) TimerEvent: {}
+[24.085726] (-) TimerEvent: {}
+[24.186297] (-) TimerEvent: {}
+[24.286647] (-) TimerEvent: {}
+[24.387094] (-) TimerEvent: {}
+[24.487723] (-) TimerEvent: {}
+[24.588088] (-) TimerEvent: {}
+[24.688467] (-) TimerEvent: {}
+[24.788769] (-) TimerEvent: {}
+[24.889042] (-) TimerEvent: {}
+[24.989378] (-) TimerEvent: {}
+[25.089706] (-) TimerEvent: {}
+[25.190017] (-) TimerEvent: {}
+[25.290341] (-) TimerEvent: {}
+[25.390664] (-) TimerEvent: {}
+[25.491058] (-) TimerEvent: {}
+[25.591432] (-) TimerEvent: {}
+[25.691756] (-) TimerEvent: {}
+[25.792140] (-) TimerEvent: {}
+[25.892815] (-) TimerEvent: {}
+[25.993141] (-) TimerEvent: {}
+[26.093524] (-) TimerEvent: {}
+[26.193966] (-) TimerEvent: {}
+[26.294320] (-) TimerEvent: {}
+[26.394640] (-) TimerEvent: {}
+[26.494988] (-) TimerEvent: {}
+[26.595338] (-) TimerEvent: {}
+[26.695672] (-) TimerEvent: {}
+[26.796039] (-) TimerEvent: {}
+[26.896356] (-) TimerEvent: {}
+[26.996733] (-) TimerEvent: {}
+[27.097059] (-) TimerEvent: {}
+[27.197378] (-) TimerEvent: {}
+[27.297711] (-) TimerEvent: {}
+[27.398037] (-) TimerEvent: {}
+[27.498398] (-) TimerEvent: {}
+[27.598887] (-) TimerEvent: {}
+[27.699252] (-) TimerEvent: {}
+[27.799744] (-) TimerEvent: {}
+[27.900278] (-) TimerEvent: {}
+[28.000616] (-) TimerEvent: {}
+[28.100993] (-) TimerEvent: {}
+[28.201322] (-) TimerEvent: {}
+[28.301589] (-) TimerEvent: {}
+[28.401921] (-) TimerEvent: {}
+[28.502270] (-) TimerEvent: {}
+[28.602612] (-) TimerEvent: {}
+[28.702949] (-) TimerEvent: {}
+[28.803236] (-) TimerEvent: {}
+[28.903559] (-) TimerEvent: {}
+[29.003903] (-) TimerEvent: {}
+[29.104257] (-) TimerEvent: {}
+[29.204705] (-) TimerEvent: {}
+[29.305142] (-) TimerEvent: {}
+[29.405460] (-) TimerEvent: {}
+[29.505866] (-) TimerEvent: {}
+[29.606375] (-) TimerEvent: {}
+[29.706693] (-) TimerEvent: {}
+[29.807013] (-) TimerEvent: {}
+[29.907427] (-) TimerEvent: {}
+[30.007776] (-) TimerEvent: {}
+[30.108197] (-) TimerEvent: {}
+[30.208537] (-) TimerEvent: {}
+[30.308847] (-) TimerEvent: {}
+[30.409163] (-) TimerEvent: {}
+[30.509485] (-) TimerEvent: {}
+[30.609854] (-) TimerEvent: {}
+[30.710253] (-) TimerEvent: {}
+[30.810566] (-) TimerEvent: {}
+[30.910977] (-) TimerEvent: {}
+[31.011421] (-) TimerEvent: {}
+[31.111751] (-) TimerEvent: {}
+[31.212362] (-) TimerEvent: {}
+[31.312828] (-) TimerEvent: {}
+[31.413139] (-) TimerEvent: {}
+[31.513534] (-) TimerEvent: {}
+[31.613907] (-) TimerEvent: {}
+[31.714262] (-) TimerEvent: {}
+[31.814612] (-) TimerEvent: {}
+[31.915011] (-) TimerEvent: {}
+[32.015354] (-) TimerEvent: {}
+[32.115672] (-) TimerEvent: {}
+[32.216039] (-) TimerEvent: {}
+[32.224690] (px4controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable px4_controller\x1b[0m\n'}
+[32.316158] (-) TimerEvent: {}
+[32.416509] (-) TimerEvent: {}
+[32.516843] (-) TimerEvent: {}
+[32.617342] (-) TimerEvent: {}
+[32.718154] (-) TimerEvent: {}
+[32.818492] (-) TimerEvent: {}
+[32.918972] (-) TimerEvent: {}
+[33.019377] (-) TimerEvent: {}
+[33.119787] (-) TimerEvent: {}
+[33.220227] (-) TimerEvent: {}
+[33.320605] (-) TimerEvent: {}
+[33.420907] (-) TimerEvent: {}
+[33.521244] (-) TimerEvent: {}
+[33.621588] (-) TimerEvent: {}
+[33.721894] (-) TimerEvent: {}
+[33.796728] (px4controller) StdoutLine: {'line': b'[100%] Built target px4_controller\n'}
+[33.808154] (px4controller) CommandEnded: {'returncode': 0}
+[33.808813] (px4controller) JobProgress: {'identifier': 'px4controller', 'progress': 'install'}
+[33.816200] (px4controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/px4controller/src/px4controller/build/px4controller'], 'cwd': '/root/px4controller/src/px4controller/build/px4controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('GIT_ASKPASS', '/root/.vscode-server/bin/6a44c352bd24569c417e530095901b649960f9f8/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/root/px4controller/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/root'), ('OLDPWD', '/root/px4controller/src'), ('TERM_PROGRAM_VERSION', '1.123.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-82aab9a5-ff22-40df-a21e-e90b6b1c0cd7.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/6a44c352bd24569c417e530095901b649960f9f8/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/6a44c352bd24569c417e530095901b649960f9f8/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('DEBUGINFOD_URLS', ''), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/root/px4controller/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/594_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/go/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/bin/6a44c352bd24569c417e530095901b649960f9f8/bin/remote-cli:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/usr/local/go/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python314/Scripts/:/mnt/c/Python314/:/mnt/c/Program Files/Zulu/zulu-21/bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/ZED SDK/dependencies/freeglut_2.8/x64:/mnt/c/Program Files (x86)/ZED SDK/dependencies/glew-1.12.0/x64:/mnt/c/Program Files (x86)/ZED SDK/dependencies/opencv_3.1.0/x64:/mnt/c/Program Files (x86)/ZED SDK/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Program Files/WireGuard/:/mnt/c/Program Files/TortoiseSVN/bin:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Users/click/AppData/Local/Programs/Python/Python38/Scripts/:/mnt/c/Users/click/AppData/Local/Programs/Python/Python38/:/mnt/c/Users/click/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/click/AppData/Local/Programs/Microsoft V:/mnt/c/Program Files/dotnet/:/mnt/c/Strawberry/c/bin:/mnt/c/Strawberry/perl/site/bin:/mnt/c/Strawberry/perl/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Go/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Users/click/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/click/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/click/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/click/.cargo/bin:/mnt/c/Users/click/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/click/AppData/Local/Programs/Ollama:/mnt/c/Users/click/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Users/click/go/bin:/mnt/c/Users/click/AppData/Roaming/npm:/mnt/c/Users/click/AppData/Local/Python/bin:/mnt/c/Users/click/.dotnet/tools:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/0/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-0700119650.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/root/px4controller/install/px4controller:/root/px4controller/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/root/px4controller/src/px4controller/build/px4controller'), ('COPILOT_DEBUG_NONCE', '722bbc1600e43517318307b853126dc8'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/root/px4controller/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/root/px4controller/install/px4controller:/root/px4controller/install/px4_msgs:/opt/ros/humble'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:')]), 'shell': False}
+[33.821963] (-) TimerEvent: {}
+[33.823008] (px4controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[33.824039] (px4controller) StdoutLine: {'line': b'-- Installing: /root/px4controller/src/px4controller/install/px4controller/lib/px4controller/px4_controller\n'}
+[33.846960] (px4controller) StdoutLine: {'line': b'-- Set runtime path of "/root/px4controller/src/px4controller/install/px4controller/lib/px4controller/px4_controller" to ""\n'}
+[33.847154] (px4controller) StdoutLine: {'line': b'-- Installing: /root/px4controller/src/px4controller/install/px4controller/include\n'}
+[33.847381] (px4controller) StdoutLine: {'line': b'-- Installing: /root/px4controller/src/px4controller/install/px4controller/include/px4_controller.hpp\n'}
+[33.847532] (px4controller) StdoutLine: {'line': b'-- Installing: /root/px4controller/src/px4controller/install/px4controller/include/px4_proxy.hpp\n'}
+[33.847707] (px4controller) StdoutLine: {'line': b'-- Installing: /root/px4controller/src/px4controller/install/px4controller/share/px4controller/launch\n'}
+[33.848605] (px4controller) StdoutLine: {'line': b'-- Installing: /root/px4controller/src/px4controller/install/px4controller/share/px4controller/launch/px4controller_launch.py\n'}
+[33.849637] (px4controller) StdoutLine: {'line': b'-- Installing: /root/px4controller/src/px4controller/install/px4controller/share/ament_index/resource_index/package_run_dependencies/px4controller\n'}
+[33.850171] (px4controller) StdoutLine: {'line': b'-- Installing: /root/px4controller/src/px4controller/install/px4controller/share/ament_index/resource_index/parent_prefix_path/px4controller\n'}
+[33.850693] (px4controller) StdoutLine: {'line': b'-- Installing: /root/px4controller/src/px4controller/install/px4controller/share/px4controller/environment/ament_prefix_path.sh\n'}
+[33.850871] (px4controller) StdoutLine: {'line': b'-- Installing: /root/px4controller/src/px4controller/install/px4controller/share/px4controller/environment/ament_prefix_path.dsv\n'}
+[33.851075] (px4controller) StdoutLine: {'line': b'-- Installing: /root/px4controller/src/px4controller/install/px4controller/share/px4controller/environment/path.sh\n'}
+[33.851235] (px4controller) StdoutLine: {'line': b'-- Installing: /root/px4controller/src/px4controller/install/px4controller/share/px4controller/environment/path.dsv\n'}
+[33.851418] (px4controller) StdoutLine: {'line': b'-- Installing: /root/px4controller/src/px4controller/install/px4controller/share/px4controller/local_setup.bash\n'}
+[33.851587] (px4controller) StdoutLine: {'line': b'-- Installing: /root/px4controller/src/px4controller/install/px4controller/share/px4controller/local_setup.sh\n'}
+[33.851799] (px4controller) StdoutLine: {'line': b'-- Installing: /root/px4controller/src/px4controller/install/px4controller/share/px4controller/local_setup.zsh\n'}
+[33.851958] (px4controller) StdoutLine: {'line': b'-- Installing: /root/px4controller/src/px4controller/install/px4controller/share/px4controller/local_setup.dsv\n'}
+[33.852152] (px4controller) StdoutLine: {'line': b'-- Installing: /root/px4controller/src/px4controller/install/px4controller/share/px4controller/package.dsv\n'}
+[33.852622] (px4controller) StdoutLine: {'line': b'-- Installing: /root/px4controller/src/px4controller/install/px4controller/share/ament_index/resource_index/packages/px4controller\n'}
+[33.853090] (px4controller) StdoutLine: {'line': b'-- Installing: /root/px4controller/src/px4controller/install/px4controller/share/px4controller/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[33.853250] (px4controller) StdoutLine: {'line': b'-- Installing: /root/px4controller/src/px4controller/install/px4controller/share/px4controller/cmake/px4controllerConfig.cmake\n'}
+[33.853411] (px4controller) StdoutLine: {'line': b'-- Installing: /root/px4controller/src/px4controller/install/px4controller/share/px4controller/cmake/px4controllerConfig-version.cmake\n'}
+[33.853592] (px4controller) StdoutLine: {'line': b'-- Installing: /root/px4controller/src/px4controller/install/px4controller/share/px4controller/package.xml\n'}
+[33.855603] (px4controller) CommandEnded: {'returncode': 0}
+[33.872133] (px4controller) JobEnded: {'identifier': 'px4controller', 'rc': 0}
+[33.872939] (-) EventReactorShutdown: {}

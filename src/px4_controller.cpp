@@ -14,7 +14,6 @@ inline rclcpp::QoS BestEffortTelemetryQoS()
   return rclcpp::QoS(rclcpp::KeepLast(100)).best_effort().durability_volatile();
 }
 
-
 PX4Controller::PX4Controller(const std::string & node_name,const rclcpp::NodeOptions & options):PX4Proxy(node_name,options)
 {
   rmw_qos_profile_t qos_profile = rmw_qos_profile_sensor_data;
@@ -22,6 +21,10 @@ PX4Controller::PX4Controller(const std::string & node_name,const rclcpp::NodeOpt
   RCLCPP_INFO(get_logger(), "PX4Controller initialized");
 }
 
+
+void PX4Controller::onPX4Updated(uint32_t flags){
+RCLCPP_INFO(get_logger(), "onPX4Updated");
+}
 
 int main(int argc, char ** argv)
 {

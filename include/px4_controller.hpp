@@ -7,5 +7,7 @@ class PX4Controller : public PX4Proxy
 {
 public:
   PX4Controller(const std::string & node_name,const rclcpp::NodeOptions & options = rclcpp::NodeOptions());
+
+  virtual void onPX4Updated(uint32_t flags);
 };
 

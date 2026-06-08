@@ -1,0 +1,10 @@
+/root/px4controller/src/px4controller/build/px4controller/CMakeFiles/uninstall.dir
+/root/px4controller/src/px4controller/build/px4controller/CMakeFiles/px4controller_uninstall.dir
+/root/px4controller/src/px4controller/build/px4controller/CMakeFiles/px4_controller.dir
+/root/px4controller/src/px4controller/build/px4controller/CMakeFiles/test.dir
+/root/px4controller/src/px4controller/build/px4controller/CMakeFiles/edit_cache.dir
+/root/px4controller/src/px4controller/build/px4controller/CMakeFiles/rebuild_cache.dir
+/root/px4controller/src/px4controller/build/px4controller/CMakeFiles/list_install_components.dir
+/root/px4controller/src/px4controller/build/px4controller/CMakeFiles/install.dir
+/root/px4controller/src/px4controller/build/px4controller/CMakeFiles/install/local.dir
+/root/px4controller/src/px4controller/build/px4controller/CMakeFiles/install/strip.dir
